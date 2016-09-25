@@ -20,11 +20,13 @@ void loop() {
   Serial.println(ang);
 
   if(ang<=1) {
+    ang = 1;
     increasing = 1;
     delay(200);
   }
 
   if(ang>=180) {
+    ang = 180;
     increasing = 0;
     delay(200);
   }
